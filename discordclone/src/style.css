@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html,body,#root{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    .other-icon{
+        transition: 300ms all;
+    }
+    .other-icon:hover > .icon{
+        color: white;
+    }
+}
+
+.App{
+    @apply h-full w-full bg-[#202225]
+}
+.Sidebar{
+    @apply  bg-[#202225] w-28 flex flex-col items-center py-[12px]
+}
+.Chat-Menu{
+    @apply  bg-[#2f3136] w-80 py-2
+}
+.Content {
+    @apply bg-[#36393f] h-full w-full
+}
+.discord-icon-container{
+    @apply bg-blue-600 rounded-2xl  h-12  w-12  flex  items-center justify-center
+}
+.discord-icon{
+    @apply cursor-pointer h-[2rem]  w-[1.8rem] text-gray-50
+}
+.servers{
+    @apply my-2
+}
+.server{
+    @apply w-12 h-12 my-2
+}
+.other-icon{
+    @apply  my-4 bg-gray-800 w-12 h-12 flex justify-center items-center rounded-3xl hover:rounded-2xl hover:bg-green-500 cursor-pointer
+}
+
+.other-icon.margin-no{
+    @apply my-0;
+}
+.icon{
+    @apply  h-[2rem] w-[1.8rem] text-green-500
+}
+.search-container{
+   @apply w-56 m-auto
+}
+.search{
+    @apply bg-[#202225] rounded px-2 py-[2px] w-full
+}
+.search::placeholder {
+    @apply  opacity-60  text-sm
+}
+.Friend:first-child {
+    @apply m-4
+}
+.Friend{
+    @apply flex w-full m-1 hover:bg-zinc-700 py-1 pr-4 rounded
+}
+.discord-img{
+    @apply w-8 h-8 rounded-full mx-4
+}
+.ChatMenuText{
+    @apply flex flex-col my-4
+}
+.MenuText{
+    transition: 300ms all;
+    @apply flex justify-evenly p-2
+    rounded w-11/12 ml-2 cursor-pointer
+}
+.MenuText.active{
+    @apply bg-zinc-700 mb-2
+}
+.MenuText:hover{
+    @apply bg-zinc-700		
+}
+.navbar{
+    @apply flex items-center justify-between
+}
+.Nav{
+    @apply flex items-center w-full h-12 px-2
+}
+.navbaricon{
+    @apply mr-2 text-gray-500 text-xl
+}
+.navbar-link{
+    @apply mx-2 hover:bg-zinc-700 p-1 rounded
+}
+.navbarrighticons{
+    @apply mx-2 cursor-pointer text-2xl text-gray-300
+}
+.nav-first-link{
+    @apply mr-6
+}
+.Content{
+    @apply h-full
+}
+.ContentLeft{
+    @apply w-2/3 h-full flex flex-col;
+}
+.ContentRight{
+ @apply w-1/3 h-full;
+}
+.input{
+    @apply rounded p-4 text-gray-200 placeholder:text-gray-400 bg-zinc-900;
+}
+.input:focus{
+    outline: 0;
+}
+.ChannelsBar{
+    @apply bg-[#2f3136] w-80 py-2
+}
+.server-content{
+    @apply bg-[#36393f] h-full w-full
+}
